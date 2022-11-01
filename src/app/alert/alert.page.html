@@ -1,8 +1,30 @@
 
-<app-header titulo="Alert page"></app-header>
-<ion-button routerLink="/inicio">
-    ir a inicio
-  </ion-button>
+<app-header titulo="Lavanderia La chona"></app-header>
+
+
+<ion-label>Bienvenido</ion-label>
+<ion-img src="https://img.freepik.com/vector-premium/coleccion-dibujos-animados-lavanderia-lavadora_188898-239.jpg?w=2000"></ion-img>
 <ion-content padding>
-    <ion-button (click)="presentAlert()">Click Me</ion-button>
+    <ion-button routerLink="/inicio">Inicio</ion-button>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Schedule</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Speakers</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="map">
+      <ion-icon name="map"></ion-icon>
+      <ion-label>Map</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
