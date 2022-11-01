@@ -5,16 +5,19 @@
 
 </ion-header>
 
+
 <ion-content>
-     <div style="align-items:center;">
-     
-     <ion-list>
-       <ion-label>LOGIN</ion-label>
-       <ion-img style="width: 80px; height: 80px;" src="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg"></ion-img>
-       
-       <ion-item>
-         <ion-label>Usuario</ion-label>
-         <ion-input placeholder="Introduce tu nombre de usuario"></ion-input>
+  
+    
+    <ion-list>
+      
+      <div class="container">
+        <ion-label>LOGIN</ion-label>
+        <ion-img style="width: 80px; height: 80px;" src="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg"></ion-img>
+        
+        <ion-item>
+          <ion-label>Usuario</ion-label>
+          <ion-input placeholder="Introduce tu nombre de usuario"></ion-input>
         </ion-item>
         
         <ion-item>
@@ -22,25 +25,26 @@
           <ion-input type="password" value=""></ion-input>
         </ion-item>
         
-        
-        <ion-button fill="outline" routerLink="/alert">Ingresar</ion-button>
+
+          <ion-button  color="danger" fill="outline" routerLink="/alert">Ingresar</ion-button>
+        </div>
         
       </ion-list>
       
       <ion-fab vertical="bottom" horizontal="bottom" slot="fixed">
         
-        <ion-fab-button>
+        <ion-fab-button color="danger">
           <ion-icon name="add"></ion-icon>
         </ion-fab-button>
         
         <ion-fab-list side="top">
-          <ion-fab-button routerLink="/alert" ><ion-icon name="alarm-outline"></ion-icon></ion-fab-button>
-      <ion-fab-button routerLink="/action-sheet" ><ion-icon name="accessibility-outline"></ion-icon></ion-fab-button>
-      <ion-fab-button routerLink="/cards" ><ion-icon name="browsers-outline"></ion-icon></ion-fab-button>
+          <ion-fab-button color="light" routerLink="/alert" ><ion-icon name="reader"></ion-icon></ion-fab-button>
+          <ion-fab-button color="light" routerLink="/action-sheet" ><ion-icon name="build"></ion-icon></ion-fab-button>
+          <ion-fab-button color="light" routerLink="/cards" ><ion-icon name="construct"></ion-icon></ion-fab-button>
+          
+      </ion-fab-list>
       
-    </ion-fab-list>
+    </ion-fab>
+
     
-  </ion-fab>
-</div>
-  
-</ion-content>
+  </ion-content>

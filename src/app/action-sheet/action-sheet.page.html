@@ -4,12 +4,43 @@
   </ion-toolbar>
 </ion-header> -->
 
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
 <ion-content>
-  <ion-button routerLink="/inicio">
-    ir a inicio
-  </ion-button>
   <div class="container">
-    <ion-button (click)="presentActionSheet()">Open</ion-button>
-    <code *ngIf="result"> {{ result }} </code>
+
+    <ion-button color="warning" >
+      Lavado
+    </ion-button>
+    <ion-button color="tertiary" >
+      Secado
+    </ion-button>
+    <ion-button color="success">
+      Planchado
+    </ion-button>
+    <ion-button color="danger" routerLink="/cards">
+      Solicitar Servicio
+    </ion-button>
   </div>
+    
+  <ion-fab vertical="bottom" horizontal="bottom" slot="fixed">
+        
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" routerLink="/inicio" ><ion-icon name="home"></ion-icon></ion-fab-button>
+      <ion-fab-button color="light" routerLink="/action-sheet" ><ion-icon name="build"></ion-icon></ion-fab-button>
+      <ion-fab-button color="light" routerLink="/cards" ><ion-icon name="construct"></ion-icon></ion-fab-button>
+      
+  </ion-fab-list>
+  
+</ion-fab>
+  
 </ion-content>
