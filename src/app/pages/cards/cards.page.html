@@ -1,16 +1,56 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Cards</ion-title>
+    <ion-title>Solicitar Servicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-button routerLink="/inicio">
-    ir a inicio
-  </ion-button>
+
+  <ion-list>
+    <ion-label color="Danger">Ubicacion</ion-label>
+    <ion-item>
+      <ion-label>Colonia</ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Calle</ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>C.P.</ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora de entrega</ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora de salida</ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
   
-  <ion-card>
+  </ion-list>
+  <div class="container">
+
+    <ion-button (click)="presentAlert()" color="success" fill="outline">Ingresar</ion-button>
+  </div>
+  
+  <ion-fab vertical="bottom" horizontal="bottom" slot="fixed">
+        
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" routerLink="/inicio" ><ion-icon name="home"></ion-icon></ion-fab-button>
+      <ion-fab-button color="light" routerLink="/action-sheet" ><ion-icon name="build"></ion-icon></ion-fab-button>
+      <ion-fab-button color="light" routerLink="/alert" ><ion-icon name="construct"></ion-icon></ion-fab-button>
+      
+  </ion-fab-list>
+  
+</ion-fab>
+  <!-- <ion-card>
     <ion-card-header>
       <ion-card-title>Video Juegos</ion-card-title>
       <ion-card-subtitle>Diferentes generos de videojuegos</ion-card-subtitle>
@@ -70,6 +110,6 @@
       </ion-row>
     </ion-grid>
 
-  </ion-card>
+  </ion-card> -->
 
 </ion-content>
